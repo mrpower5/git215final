@@ -1,0 +1,214 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My Code Starts Here */
+:root {
+    --primary-green: #308142;
+    --primary-blue: #506a7a;
+    --primary-slate: #5a5e68;
+    --accent-peach: #f2a679;
+    --accent-lavender: #d7aabf;
+    --background-light: #e9ecef;
+    --background-dark: #333333;
+    --text-light: #f8f9fa;
+    --text-dark: #212529;
+	--font-heading: 'Playfair Display', serif;
+    --font-body: 'Raleway', sans-serif;
+}
+
+body {
+	background-image: linear-gradient(var(--primary-green),var(--primary-blue) 60%,var(--background-light));
+	color: var(--text-dark);
+}
+
+header {
+	background-image: url(images/swiss-valley.jpg);
+	background-repeat: no-repeat;
+	/* background-attachment: fixed; */
+	background-position: center;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font-heading);
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+header a {
+	text-decoration: none;
+	color: var(--text-dark);
+}
+
+h1 {
+	margin: 0 auto;
+	padding: 50px 0;
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+h1 a:hover {
+	color: var(--primary-blue);
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav li {
+	padding: 1rem 2.5rem;
+}
+
+nav a:hover {
+	color: var(--primary-green);
+	text-decoration: underline;
+	font-weight: 700;
+}
+
+main {
+	font-family: var(--font-body);
+}
+
+h2 {
+	text-align: center;
+	font-size: 26pt;
+	color: var(--text-light);
+	font-weight: bold;
+	margin: 15px 0 10px;
+}
+
+#intro p {
+	width: 65ch;
+	margin: 25px auto;
+	background-color: var(--accent-peach);
+	padding: 15px 25px;
+	border-radius: 15px;
+	font-weight: bold;
+}
+
+#content {
+	display: flex;
+	flex-direction: row;
+	margin: 0.5rem auto;
+	gap: 30px;
+}
+
+#content section {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 590px;
+}
+
+#content img {
+	margin: 0 auto;
+	border-radius: 30px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 2.1rem;
+	margin: 1rem;
+}
+
+#content p {
+	margin: 10px;
+	font-size: 1.5rem;
+}
+
+main.contact {
+	width: 710px;
+	margin: 1rem auto;
+	font-size: 1.15rem;
+	background-color: var(--accent-lavender);
+	border-radius: 35px;
+}
+
+main.contact p {
+	margin: 1rem;
+	
+}
+
+span.required {
+	color: red;
+}
+
+form {
+	background-color: var(--background-light);
+}
+
+form * {
+	max-width: 300px;
+	margin-left: 15px;
+}
+
+form *:first-child {
+	margin-top: 15px;
+}
+
+footer {
+	margin: 3rem 0 1rem;
+	text-align: center;
+}
+footer p {
+	padding: 15px;
+}
+
+div.left {
+	float: left;
+}
+
+div.right {
+	float: right;
+}
